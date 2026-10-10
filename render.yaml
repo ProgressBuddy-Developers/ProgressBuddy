@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: progressbuddy
+    runtime: docker
+    plan: starter            # persistent disks need a paid plan
+    healthCheckPath: /api/health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: YOUTUBE_API_KEY
+        sync: false
+    disk:
+      name: progressbuddy-data
+      mountPath: /data
+      sizeGB: 1

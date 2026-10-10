@@ -1,0 +1,9 @@
+{
+  "name": "progressbuddy",
+  "version": "1.0.0",
+  "description": "Compete with your friend, not against your friend.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node test.js && node test-otp.js" },
+  "engines": { "node": "22.x" },
+  "license": "MIT"
+}

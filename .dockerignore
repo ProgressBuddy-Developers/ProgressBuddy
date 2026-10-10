@@ -1,0 +1,6 @@
+data
+node_modules
+*.zip
+.git
+api
+vercel.json
